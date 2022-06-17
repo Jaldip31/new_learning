@@ -1,7 +1,36 @@
+// 01-06-2022
 // apply() , call() , bind()  
 // when we work with function and object, we can use apply(),bind(),call() methodes.
 // if we change the value of object, we can make the function using thease methodes.
 // Ex : my_github
+// ###################################################################################################################################
+
+// 08-06-2022
+// let arr = ["Apple", "Orange", "Pear"];
+// let obj = {name:"jaldip",age:20}
+
+// // array
+// for (let value of arr) {
+//   console.log(value);                                               // Apple, Orange, Pear
+// }
+
+// for (let key in arr) {
+//   console.log(arr[key]);                                          // 0 Apple, 1 Orange, 2 Pear
+// }
+
+// for (let [key,val] of arr.entries()) {
+//   console.log(key,val);                                             // 0 Apple, 1 Orange, 2 Pear
+// }
+
+// // object
+// for (let key in obj) {
+//     console.log(key,obj[key]);                                     // name jaldip , age 20
+// }
+
+// for (let [key,val] of Object.entries(obj)) {
+//   console.log(key,val);                                            // name jaldip , age 20
+// }
+// ###################################################################################################################################
 
 // 09-06-2022
 // arr change String to Number
@@ -49,4 +78,53 @@
 // console.log(persistence(39));
 // ###################################################################################################################################
 
-// 08-06-2022
+//localStorage , sessionStorage  
+// <script>
+    // setItem(key, value) – store key/value pair.
+    // getItem(key) – get the value by key.
+    // removeItem(key) – remove the key with its value.
+    // clear() – delete everything.
+    // key(index) – get the key on a given position.
+    // length – the number of stored items.
+
+    // #########################################################################################################################
+    // LocalStorage
+    // window.localStorage.setItem("test1", "hiiiiiiiii");
+    // console.log( localStorage.getItem('test1') )
+
+    // set key
+    // localStorage.test = 2;
+    
+    // get key
+    // console.log( localStorage.test ); // 2
+
+    // remove key
+    // delete localStorage.test;
+
+    // Rigth Way
+    // We can use JSON to store objects though:
+    // localStorage.user = JSON.stringify({ name: "John" });
+    // // console.log(localStorage.user);                               // {"name":"John"}
+    // let user = JSON.parse(localStorage.user);
+    // console.log(user);                                               // {name: 'John'}
+    // console.log(user.name);                                          // John
+
+    // Wrong Way
+    // localStorage.user1 = { name: "Johnnnnn" };
+    // console.log(localStorage.user1);                                 // [object Object]
+    
+    // console.log(localStorage.length);                                // 3
+    // console.log(localStorage.clear());                               // clear all cookie
+    
+    
+    // #########################################################################################################################
+    //  sessionStorage
+    //     sessionStorage.setItem('mytest', 1);
+    //     console.log( sessionStorage.getItem('mytest') );                  // after refresh: 1
+    // #########################################################################################################################
+
+    // document.cookie = "user=John"; // update only cookie named 'user'
+    // console.log(document.cookie); // show all cookies
+
+//   </script>
+
