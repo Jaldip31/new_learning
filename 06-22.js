@@ -1,3 +1,8 @@
+// apply() , call() , bind()  
+// when we work with function and object, we can use apply(),bind(),call() methodes.
+// if we change the value of object, we can make the function using thease methodes.
+// Ex : my_github
+
 // 09-06-2022
 // arr change String to Number
 // let arr = ["1","2","3","4","5"];
